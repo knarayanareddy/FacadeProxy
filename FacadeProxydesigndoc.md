@@ -1,4 +1,4 @@
-Let me pull both docs in full first so I can ground every technical detail accurately before generating the replacement spec.The web search didn't surface the raw file content directly. I have enough from my prior deep analysis of both docs to generate a fully grounded, production-grade replacement spec. Here it is — written entirely in Markdown so you can drop it straight into your repo.
+
 
 ---
 
