@@ -1,0 +1,13 @@
+[proxy]
+bind_address = "127.0.0.1"
+port = 7878
+request_timeout_ms = 5000
+max_connections = 100
+log_level = "warn"
+# Production: set a high-entropy random value and copy the same value into the extension popup settings.
+# The proxy accepts unauthenticated /persona mutations only when this is omitted, which is development-only.
+auth_token = "replace-with-at-least-32-random-bytes"
+
+[persona_defaults]
+passthrough_on_failure = true
+coherence_strict = false

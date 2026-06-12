@@ -1,0 +1,2 @@
+85af8e0eef106d943637b96fe222be182a8cd402d7854e6edc87e3bbb75a90a5  facadeproxy-0.1.0-extension.zip
+a595d3153fd604312617a58465787490a22af6fa9fd602d7392864d52305eb83  facadeproxy-0.1.0-linux-x64-proxy.zip

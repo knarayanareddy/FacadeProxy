@@ -1,0 +1,206 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+  margin: 0;
+  background: linear-gradient(135deg, #111827 0%, #0f172a 48%, #172554 100%);
+}
+
+.shell {
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+header p,
+footer,
+.label,
+.validation {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.card {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.78);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+strong {
+  display: block;
+  overflow: hidden;
+  color: #f8fafc;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+}
+
+select,
+input {
+  padding: 9px 10px;
+  background: #020617;
+  color: #e5e7eb;
+  outline: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.button-row.single {
+  grid-template-columns: 1fr;
+}
+
+button {
+  cursor: pointer;
+  padding: 9px 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 800;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.secondary {
+  background: #334155;
+}
+
+button.secondary:hover {
+  background: #475569;
+}
+
+.pill {
+  min-width: 72px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.pill.unset {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.pill.active {
+  background: #166534;
+  color: #dcfce7;
+}
+
+.pill.degraded {
+  background: #92400e;
+  color: #ffedd5;
+}
+
+.pill.invalid {
+  background: #991b1b;
+  color: #fee2e2;
+}
+
+.pill.pending {
+  background: #475569;
+  color: #e2e8f0;
+}
+
+.validation {
+  min-height: 16px;
+  margin-top: 8px;
+  line-height: 1.35;
+}
+
+.validation.error {
+  color: #fecaca;
+}
+
+.validation.warn {
+  color: #fde68a;
+}
+
+pre {
+  max-height: 140px;
+  overflow: auto;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #020617;
+  color: #bbf7d0;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+footer {
+  margin-top: 12px;
+  text-align: center;
+}

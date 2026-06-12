@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+target/
+release/
+
+# editor/OS
+.DS_Store
+*.swp
+
+# local runtime
+.facadeproxy/
+*.log

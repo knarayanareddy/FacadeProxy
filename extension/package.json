@@ -1,0 +1,25 @@
+{
+  "name": "facadeproxy-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FacadeProxy MV3 browser extension",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build",
+    "build:firefox": "vite build && node scripts/build-firefox.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^20.14.15",
+    "typescript": "^5.5.4",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.8"
+  }
+}

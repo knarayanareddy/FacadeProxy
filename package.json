@@ -1,0 +1,12 @@
+{
+  "name": "facadeproxy-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FacadeProxy monorepo: MV3 extension and localhost proxy",
+  "scripts": {
+    "build": "make all",
+    "test": "make test",
+    "ext": "make ext",
+    "proxy": "make proxy"
+  }
+}

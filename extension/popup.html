@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FacadeProxy</title>
+  </head>
+  <body>
+    <main id="app" class="shell">
+      <header>
+        <div>
+          <h1>FacadeProxy</h1>
+          <p>Local coherent persona control</p>
+        </div>
+        <span id="status-pill" class="pill unset">UNSET</span>
+      </header>
+
+      <section class="card">
+        <label for="persona-select">Persona</label>
+        <select id="persona-select"></select>
+        <div class="button-row">
+          <button id="apply-button" type="button">Apply persona</button>
+          <button id="clear-button" type="button" class="secondary">Clear</button>
+        </div>
+        <p id="validation" class="validation"></p>
+      </section>
+
+      <section class="card">
+        <label for="token-input">Proxy control token</label>
+        <input id="token-input" type="password" spellcheck="false" autocomplete="off" placeholder="Optional; must match proxy --auth-token" />
+        <div class="button-row single">
+          <button id="save-token-button" type="button" class="secondary">Save token locally</button>
+        </div>
+      </section>
+
+      <section class="card grid">
+        <div>
+          <span class="label">Proxy</span>
+          <strong id="proxy-status">checking…</strong>
+        </div>
+        <div>
+          <span class="label">Port</span>
+          <strong id="proxy-port">7878</strong>
+        </div>
+        <div>
+          <span class="label">Active</span>
+          <strong id="active-persona">unset</strong>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Local metrics</h2>
+        <pre id="metrics">Proxy metrics unavailable.</pre>
+      </section>
+
+      <footer>
+        No remote telemetry. Localhost only.
+      </footer>
+    </main>
+    <script type="module" src="/src/popup/popup.ts"></script>
+  </body>
+</html>
